@@ -24,10 +24,27 @@ public class student {
         System.out.println("enter English marks : ");
         Scanner take5 = new Scanner(System.in);
         int English = take5.nextInt();
-        
+
         int percentage = (maths + physics + chemistry + English + hindi)/5;
         float cgpa = percentage/9.5f;
         System.out.println(cgpa);
-
+        
+     if (cgpa >= 9.5f) {
+            System.out.println("A+");
+        } else if (cgpa >= 9.0f) {
+            System.out.println("A");
+        } else if (cgpa >= 8.5f) {
+            System.out.println("B+");
+        } else if (cgpa >= 8.0f) {
+            System.out.println("B");
+        } else if (cgpa >= 7.5f) {
+            System.out.println("C+");
+        } else if (cgpa >= 7.0f) {
+            System.out.println("C");
+        } else if (cgpa >= 6.5f) {
+            System.out.println("D");
+        } else {
+            System.out.println("Invalid grade");
+        }
     }
 }
